@@ -1,5 +1,5 @@
 # Facebook_clone
-This is a clone of Facebook I made as a side project. I won't be hosting it on any websites for copyright reasons.
+This is a clone of Facebook I made as a side project. I won't be hosting it on any website for copyright reasons.
 
 
 To start the project, go to the frontend folder, go to the terminal, and type
