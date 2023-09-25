@@ -5,6 +5,7 @@ import {
   addToSearchHistory,
   search,
   getSearchHistory,
+  removeFromSearch,
 } from "../../functions/user";
 import { Link } from "react-router-dom";
 
@@ -41,6 +42,11 @@ export default function SearchMenu({ setShowSearchMenu, token }) {
 
   const addToSearchHistoryHandler = async (searchUser) => {
     const res = await addToSearchHistory(searchUser, token);
+    getHistory();
+  };
+
+  const handleRemove = async (searchUser) => {
+    removeFromSearch(searchUser, token);
     getHistory();
   };
 
@@ -109,7 +115,12 @@ export default function SearchMenu({ setShowSearchMenu, token }) {
                     {user.user?.first_name} {user.user?.last_name}
                   </span>
                 </Link>
-                <i className="exit_icon"></i>
+                <i
+                  className="exit_icon"
+                  onClick={() => {
+                    handleRemove(user.user?._id);
+                  }}
+                ></i>
               </div>
             ))}
       </div>

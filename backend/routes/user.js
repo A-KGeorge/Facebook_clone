@@ -23,6 +23,7 @@ const {
   search,
   addToSearchHistory,
   getSearchHistory,
+  removeFromSearch,
 } = require("../controllers/user");
 const { authUser } = require("../middlwares/auth");
 
@@ -50,4 +51,6 @@ router.put("/deleteRequest/:id", authUser, deleteRequest);
 router.post("/search/:searchTerm", authUser, search);
 router.put("/addToSearchHistory/", authUser, addToSearchHistory);
 router.get("/getSearchHistory/", authUser, getSearchHistory);
+router.put("/removeFromSearch/", authUser, removeFromSearch);
+
 module.exports = router;
