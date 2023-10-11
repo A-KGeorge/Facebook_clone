@@ -136,8 +136,7 @@ const userSchema = mongoose.Schema(
           "In a relationship",
           "Married",
           "Divorced",
-          "Sodomite",
-          "Pedophile (Minor Attracted Person)",
+         
         ],
       },
       instagram: {
