@@ -1,5 +1,5 @@
 # Facebook_clone
-This is a clone of Facebook I made as a side project. I won't be hosting for copyright reasons.
+This is a clone of Facebook I made as a side project. I won't be hosting it for copyright reasons.
 
 To install all packages, go inside the frontend folder and type
 
